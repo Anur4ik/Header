@@ -6,18 +6,18 @@ margin-left:200px;
 height:80px;
 
 }
-.On_left{
+.left{
 	width:200;
 	float:left;
 	height:90;
 	padding-top:5px;
 }
-.On_right{
+.right{
   float: right;
     width: 400px; 
     height: 90px;
 }
-.On_right #menu_head, #menu_head1 ,#menu_head2{
+.right #menu_head, #menu_head1 ,#menu_head2{
     margin-left: 10px; 
     border: none;
     padding: 8px 16px;
@@ -30,7 +30,7 @@ letter-spacing: 0em;
 text-align: left;
 background:none;
 }
-	.On_right  #menu_head2{
+	.right  #menu_head2{
 	margin-top:20px;
 	margin-left:40px;
 border-radius: 8px;
