@@ -2,8 +2,6 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 116px;
-    background-color: #FFFFFF;
     position: fixed;
     width: 100%;
 
