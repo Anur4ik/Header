@@ -1,8 +1,17 @@
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 116px;
+    background-color: #FFFFFF;
+    position: fixed;
+    width: 100%;
 
+}
 .Header {
 width:1200px;
   justify-content: flex-start;
-margin-left:200px;
+margin-left:0px;
 height:80px;
 
 }
@@ -37,8 +46,8 @@ border-radius: 8px;
 background: #8053FF;
 color: #FFFFFF;}
 .main {
-
-    padding-left: 170px; 
+padding-top: 100px; 
+   
     display: flex; 
     align-items: center; 
     justify-content: center; 
