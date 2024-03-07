@@ -6,57 +6,69 @@ header{
     width: 100%;
 
 }
-.Header {
+footer{
+	display: flex;
+	
+    justify-content: center;
+   
+    width: 100%;
+}
+footer img{width:240px;}
+
+.container {
 width:1200px;
   justify-content: flex-start;
 margin-left:0px;
 height:80px;
 
 }
-.left{
+.tittle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+ul{  list-style-type:  none;
+  display: flex; float: left;}
+  a{text-decoration: none;color:#23155B;}
+.logo{
 	width:200;
 	float:left;
 	height:90;
 	padding-top:5px;
 }
-.right{
+.menu_list{
   float: right;
-    width: 400px; 
+    width: 450px; 
     height: 90px;
+	padding:10px 10px 10px 10px;
 }
-.right #menu_head, #menu_head1 ,#menu_head2{
+.menu_list li{
     margin-left: 10px; 
-    border: none;
     padding: 8px 16px;
-font-family: Poppins;
 font-size: 16px;
-color: #23155B;
-font-weight: 500;
-line-height: 28px;
-letter-spacing: 0em;
 text-align: left;
-background:none;
 }
-	.right  #menu_head2{
-	margin-top:20px;
-	margin-left:40px;
+ .btn-primary{
+margin-top:10px;
+margin-left:40px;
 border-radius: 8px;
 background: #8053FF;
+padding: 8px 16px;
 color: #FFFFFF;}
 .main {
 padding-top: 100px; 
-   
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-    text-align: center; 
+display: flex; 
+align-items: center; 
+justify-content: center; 
+text-align: center; 
 }
-.content {
+.position {
+	
     position: relative; 
 }
-
-
-.text {
+.name_company {
     position: absolute;
     top: 34%; 
     left: 35%;
@@ -64,7 +76,7 @@ font-family: Poppins;
 font-size: 64px;
 	color: #23155B;
 }
-.small_text {
+.descriptions {
     position: absolute;
     top: 54%; 
     left: 30%;
@@ -77,7 +89,7 @@ text-align: center;
 color:#23155B;
 
 }
- #menu_1, #menu_2{
+ .option{
 	
     margin-left: 10px; 
     border: none;
@@ -91,7 +103,7 @@ letter-spacing: 0em;
 text-align: left;
 background:none;
 }
-  #menu_1{
+  .btn_left{
 position: absolute;
 top: 80%; 
  left: 34%;
@@ -101,7 +113,7 @@ justify-content: center;
 border-radius: 8px;
 background: #8053FF;
 color: #FFFFFF;}
-#menu_2{ position: absolute;
+.btn_right{ position: absolute;
    
 	top: 80%; 
     left: 52%;
