@@ -1,0 +1,127 @@
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+
+}
+footer{
+	display: flex;
+	
+    justify-content: center;
+   
+    width: 100%;
+}
+footer img{width:240px;}
+
+.container {
+width:1200px;
+  justify-content: flex-start;
+margin-left:0px;
+height:80px;
+
+}
+.tittle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+ul{  list-style-type:  none;
+  display: flex; float: left;}
+  a{text-decoration: none;color:#23155B;}
+.logo{
+	width:200;
+	float:left;
+	height:90;
+	padding-top:5px;
+}
+.menu_list{
+  float: right;
+    width: 450px; 
+    height: 90px;
+	padding:10px 10px 10px 10px;
+}
+.menu_list li{
+    margin-left: 10px; 
+    padding: 8px 16px;
+font-size: 16px;
+text-align: left;
+}
+ .btn-primary{
+margin-top:10px;
+margin-left:40px;
+border-radius: 8px;
+background: #8053FF;
+padding: 8px 16px;
+color: #FFFFFF;}
+.main {
+padding-top: 100px; 
+display: flex; 
+align-items: center; 
+justify-content: center; 
+text-align: center; 
+}
+.position {
+	
+    position: relative; 
+}
+.name_company {
+    position: absolute;
+    top: 34%; 
+    left: 35%;
+font-family: Poppins;
+font-size: 64px;
+	color: #23155B;
+}
+.descriptions {
+    position: absolute;
+    top: 54%; 
+    left: 30%;
+font-family: Poppins;
+font-size: 24px;
+font-weight: 400;
+line-height: 36px;
+letter-spacing: 0px;
+text-align: center;
+color:#23155B;
+
+}
+ .option{
+	
+    margin-left: 10px; 
+    border: none;
+    padding: 8px 16px;
+font-family: Poppins;
+font-size: 16px;
+color: #23155B;
+font-weight: 500;
+line-height: 28px;
+letter-spacing: 0em;
+text-align: left;
+background:none;
+}
+  .btn_left{
+position: absolute;
+top: 80%; 
+ left: 34%;
+width:150px;
+display: flex;
+justify-content: center;
+border-radius: 8px;
+background: #8053FF;
+color: #FFFFFF;}
+.btn_right{ position: absolute;
+   
+	top: 80%; 
+    left: 52%;
+	  display: flex;
+justify-content: center;
+border:2px solid #8053FF;
+border-radius: 8px;
+background: white;
+color: #8053FF;
+	
+}
