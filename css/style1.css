@@ -1,175 +1,431 @@
-header{
+header {
+    font-family: 'popins', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: fixed;
     width: 100%;
+}
+
+.sponsor {
+    display: flex;
+    justify-content: center;
+    margin-left: -100px;
+    width: 100%;
+}
+
+.social_media {
+
+    margin-top: -100px;
+    align-self: flex-end;
+    width: 300px;
+    padding-bottom: 70px;
+    padding-right: 90px;
+    display: block;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
 
 }
-.sponsor{
-	display: flex;
-	
-    justify-content: center;
-   margin-left: -100px; 
-    width: 100%;
+
+.social_media img {
+    width: 35px;
+    margin-right: 20px;
 }
+
+.contacts {
+    display: flex;
+    align-self: flex-end;
+    margin-top: -80px;
+    padding-right: 160px;
+    padding-bottom: 60px;
+
+
+}
+
+.contacts h5 {
+    margin-right: 20px;
+    color: #D4CDEF;
+    font-size: 15px;
+}
+
+.by_DeFiPie {
+    font-size: 62px;
+    color: #23155B;
+}
+
 main {
-	
-    padding-left: 200px; /* Adjust the padding value as needed */
+    padding-left: 200px;
+    padding-bottom: 100px;
 }
-.sponsor img{width:240px;}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background: #23155B;
+    margin: -8px;
+    border-radius: 350px 0px 0px;
+    width: auto
+}
+
+.forms {
+
+    margin-left: -700px;
+    padding: 100px;
+    display: flex;
+    flex-direction: column; /* Размещаем элементы в колонку */
+    align-items: center;
+    justify-content: center;
+}
+
+.joinToVC h1 {
+    margin-bottom: 50px;
+}
+
+.joinToVC {
+    margin-bottom: 20px;
+    padding-bottom: 100px /* Добавляем отступ между joinToVC и text_area */
+}
+
+.text_area {
+    display: flex;
+    max-width: 1000px;
+    margin-left: 600px;
+    color: #D4CDEF;
+    font-size: 15px;
+    align-items: flex-start;
+}
+
+.text_area form {
+    width: 300px;
+    margin-bottom: 20px; /* Добавляем отступ между формами */
+    margin-right: 200px;
+}
+
+.text_area input {
+    width: 400px; /* Ширина формы: 50% минус отступ в 10 пикселей */
+    border-radius: 15px;
+
+    padding: 20px;
+}
+
+.text_area label {
+    display: block; /* Для вывода текста над полем ввода */
+    margin-bottom: 5px; /* Отступ между текстом и полем ввода */
+}
+
+.joinToVC p {
+    font-family: 'popins', sans-serif;
+    margin-bottom: -50px;
+    width: 400px;
+    color: #FFFFFF;
+    font-size: 52px;
+}
+
+.text-colored-gray {
+    color: #D4CDEF;
+    font-size: 18px;
+}
+
+.about {
+    font-family: SansSerif;
+    margin: 0px auto; /* центрируем по горизонтали */
+    font-size: 18px;
+    color: #23155B;
+    width: 1400px;
+    padding-top: 100px;
+    font-size: 18px;
+    color: #23155B;
+
+}
+
+.about__img img {
+    margin-left: -17%;
+    border-radius: 40px;
+    float: left;
+}
+
+.funding_list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.funding_list li {
+    width: 48%;
+    margin-bottom: 20px;
+}
+
+.position {
+    position: relative;
+
+}
+
+.position__projects {
+    width: 1200px;
+
+}
+
+.position__investors {
+    width: 1200px;
+
+}
+
+.left {
+    margin-left: -320px;
+    max-width: 1000px
+}
+
+.pleft {
+    margin-left: -410px;
+    float: left;
+}
+
+.sponsor img {
+    width: 240px;
+}
 
 .container {
-width:1200px;
-  justify-content: flex-start;
-margin-left:0px;
-height:80px;
-
+    width: 1200px;
+    justify-content: flex-start;
+    margin-left: 0px;
+    height: 80px;
 }
+
 .tittle {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     width: 100%;
+    color: #23155B;
 }
+
 .menu_list ul,
-.sponsor ul ,.funding ul{  list-style-type:  none;
-  display: flex; float: left;}
-  a{text-decoration: none;color:#23155B;}
-.logo{
-	width:200;
-	float:left;
-	height:90;
-	padding-top:5px;
-}
-.funding img{float:left; margin-top:10px;}
-.description{font-size: 15px;color:gray;}
-.text-colored{
-	 color:#8053FF;
+.sponsor ul,
+.funding ul {
+    list-style-type: none;
+    display: flex;
+    float: left;
 }
 
-.deFi{
-	
-	color:#23155B;
-width:310px;
-	float:left;
-font-size: 45px;
+a {
+    text-decoration: none;
+    color: #23155B;
+}
+
+.logo {
+    width: 200px;
+    float: left;
+    height: 90px;
+    padding-top: 5px;
+}
+
+.about__DeFiPie {
+    display: block;
+    padding: 20px 500px 150px 450px;
+}
+
+.about__DeFiPie img {
+    width: 80px;
+    margin-bottom: -40px;
+}
+
+.about__DeFiPie br {
+    padding: 100px 100px 100px 100px;
+}
+
+.content {
+    max-width: 420px;
+}
+
+.position_list {
+    width: 500px;
+    padding: 10px;
+    box-shadow: 1px 2px 7px 7px rgba(35, 21, 91, 0.1);
+    border-radius: 7px;
+}
+
+.position_list img {
+    margin-right: 10px;
+    margin-top: -3px;
+    float: left;
+}
 
 
+.thems {
+    font-family: SansSerif;
+
+    color: #23155B;
+    margin: 5px 0; /* Устанавливаем отступы для абзацев */
+}
+
+.description {
+    margin-left: 31px;
+    font-size: 15px;
+    color: gray;
+}
+
+.text-colored {
+    color: #8053FF;
+}
+
+.deFi {
+    color: #23155B;
+    width: 310px;
+    float: left;
+    font-size: 45px;
+}
+
+.for-projects {
+    display: block;
+    width: 500px;
 
 }
-.for-projects{display: block;
-width:500px;
-margin-left:-600px;
-   }
-   .answers{color:#23155B;
-width:700px;
-font-size: 45px;}
-.fundraising{	display: flex;
+
+.for-investors {
+    display: block;
+    width: 500px;
+
+}
+
+.for-projects p {
+    font-size: 18px;
+    width: 500px;
+    color: #23155B;
+}
+
+.answers {
+    color: #23155B;
+    width: 700px;
+    font-size: 45px;
+}
+
+.investor {
+    width: 600px;
+}
+
+.fundraising {
+    display: flex;
     justify-content: center;
-    }
-
-.list_items{
-	padding-left:150px;
-	width:700px;
-	float:right;
 }
-.projects{display: flex;
-    justify-content: center;}
-.list_items ul{list-style-type: none;}
+
+.list_items {
+    padding-left: 150px;
+    width: 700px;
+    float: right;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+}
+
+.investors {
+    padding-top: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.list_items ul {
+    list-style-type: none;
+}
 
 .list-number {
     display: inline-block;
-    width: 30px; 
-    margin-right: 10px; 
+    width: 30px;
+    margin-right: 10px;
 }
 
-.menu_list{
-  float: right;
-    width: 450px; 
+.menu_list {
+    float: right;
+    width: 450px;
     height: 90px;
-	padding:10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
 }
-.menu_list li{
-    margin-left: 10px; 
+
+.menu_list li {
+    margin-left: 10px;
     padding: 8px 16px;
-font-size: 16px;
-text-align: left;
+    font-size: 16px;
+    text-align: left;
 }
- .btn-primary{
-margin-top:10px;
-margin-left:40px;
-border-radius: 8px;
-background: #8053FF;
-padding: 8px 16px;
-color: #FFFFFF;}
+
+.btn-primary {
+    margin-top: 10px;
+    margin-left: 40px;
+    border-radius: 8px;
+    background: #8053FF;
+    padding: 8px 16px;
+    color: #FFFFFF;
+}
+
 .main_content {
-	margin-left: -200px; 
-padding-top: 100px; 
-display: flex; 
-align-items: center; 
-justify-content: center; 
-text-align: center; 
+    margin-left: -200px;
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
-.position {
-	 
-    position: relative; 
-}
+
 .name_company {
     position: absolute;
-    top: 34%; 
+    top: 34%;
     left: 35%;
-font-family: Poppins;
-font-size: 64px;
-	color: #23155B;
+    font-family: Poppins;
+    font-size: 64px;
+    color: #23155B;
 }
+
 .descriptions {
     position: absolute;
-    top: 54%; 
+    top: 54%;
     left: 30%;
-font-family: Poppins;
-font-size: 24px;
-font-weight: 400;
-line-height: 36px;
-letter-spacing: 0px;
-text-align: center;
-color:#23155B;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #23155B;
+}
 
-}
- .option{
-	
-    margin-left: 10px; 
+.option {
+    margin-left: 10px;
     border: none;
-    padding: 8px 16px;
-font-family: Poppins;
-font-size: 16px;
-color: #23155B;
-font-weight: 500;
-line-height: 28px;
-letter-spacing: 0em;
-text-align: left;
-background:none;
+    padding: 8px 20px;
+    font-family: Poppins;
+    font-size: 16px;
+    color: #23155B;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    background: none;
 }
-  .btn_left{
-position: absolute;
-top: 80%; 
- left: 34%;
-width:150px;
-display: flex;
-justify-content: center;
-border-radius: 8px;
-background: #8053FF;
-color: #FFFFFF;}
-.btn_right{ position: absolute;
-   
-	top: 80%; 
+
+.btn_left {
+    position: absolute;
+    top: 80%;
+    left: 34%;
+    width: 170px;
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+    background: #8053FF;
+    color: #FFFFFF;
+}
+
+.btn_right {
+    padding: 6px 30px;
+    position: absolute;
+    top: 80%;
     left: 52%;
-	  display: flex;
-justify-content: center;
-border:2px solid #8053FF;
-border-radius: 8px;
-background: white;
-color: #8053FF;
-	
+    display: flex;
+    justify-content: center;
+    border: 2px solid #8053FF;
+    border-radius: 8px;
+    background: white;
+    color: #8053FF;
 }
