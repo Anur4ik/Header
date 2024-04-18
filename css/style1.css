@@ -1,16 +1,22 @@
+:root {
+    --font_Popins:'popins', sans-serif;
+    --font_SansSerif:SansSerif;
+    --display_flex:flex;
+    --full_width:100%;
+}
 header {
-    font-family: 'popins', sans-serif;
-    display: flex;
+    font-family:var(--font_Popins);
+    display: var(--display_flex);
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width:var(--full_width);
 }
 
 .sponsor {
-    display: flex;
+    display:var(--display_flex);
     justify-content: center;
     margin-left: -100px;
-    width: 100%;
+    width: var(--full_width);
 }
 
 .social_media {
@@ -32,7 +38,7 @@ header {
 }
 
 .contacts {
-    display: flex;
+    display: var(--display_flex);
     align-self: flex-end;
     margin-top: -80px;
     padding-right: 160px;
@@ -58,7 +64,7 @@ main {
 }
 
 footer {
-    display: flex;
+    display: var(--display_flex);
     flex-direction: column;
     background: #23155B;
     margin: -8px;
@@ -70,8 +76,8 @@ footer {
 
     margin-left: -700px;
     padding: 100px;
-    display: flex;
-    flex-direction: column; /* Размещаем элементы в колонку */
+    display:var(--display_flex);
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -86,7 +92,7 @@ footer {
 }
 
 .text_area {
-    display: flex;
+    display: var(--display_flex);
     max-width: 1000px;
     margin-left: 600px;
     color: #D4CDEF;
@@ -113,7 +119,7 @@ footer {
 }
 
 .joinToVC p {
-    font-family: 'popins', sans-serif;
+    font-family: var(--font_Popins);
     margin-bottom: -50px;
     width: 400px;
     color: #FFFFFF;
@@ -126,7 +132,7 @@ footer {
 }
 
 .about {
-    font-family: SansSerif;
+    font-family:var(--font_SansSerif);
     margin: 0px auto; /* центрируем по горизонтали */
     font-size: 18px;
     color: #23155B;
@@ -146,7 +152,7 @@ footer {
 .funding_list {
     list-style-type: none;
     padding: 0;
-    display: flex;
+    display: var(--display_flex);
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -193,11 +199,11 @@ footer {
 }
 
 .tittle {
-    display: flex;
+    display: var(--display_flex);
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 100%;
+    width: var(--full_width);
     color: #23155B;
 }
 
@@ -205,7 +211,7 @@ footer {
 .sponsor ul,
 .funding ul {
     list-style-type: none;
-    display: flex;
+    display: var(--display_flex);
     float: left;
 }
 
@@ -306,7 +312,7 @@ a {
 }
 
 .fundraising {
-    display: flex;
+    display: var(--display_flex);
     justify-content: center;
 }
 
@@ -317,13 +323,13 @@ a {
 }
 
 .projects {
-    display: flex;
+    display: var(--display_flex);
     justify-content: center;
 }
 
 .investors {
     padding-top: 70px;
-    display: flex;
+    display:var(--display_flex);
     justify-content: center;
 }
 
@@ -363,7 +369,7 @@ a {
 .main_content {
     margin-left: -200px;
     padding-top: 100px;
-    display: flex;
+    display: var(--display_flex);
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -373,7 +379,7 @@ a {
     position: absolute;
     top: 34%;
     left: 35%;
-    font-family: Poppins;
+    font-family: var(--font_Popins);
     font-size: 64px;
     color: #23155B;
 }
@@ -382,7 +388,7 @@ a {
     position: absolute;
     top: 54%;
     left: 30%;
-    font-family: Poppins;
+    font-family: var(--font_Popins);
     font-size: 24px;
     font-weight: 400;
     line-height: 36px;
@@ -395,7 +401,7 @@ a {
     margin-left: 10px;
     border: none;
     padding: 8px 20px;
-    font-family: Poppins;
+    font-family: var(--font_Popins);
     font-size: 16px;
     color: #23155B;
     font-weight: 500;
