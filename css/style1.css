@@ -1,19 +1,20 @@
 :root {
-    --font_Popins:'popins', sans-serif;
-    --font_SansSerif:SansSerif;
-    --display_flex:flex;
-    --full_width:100%;
+    --font_Popins: 'popins', sans-serif;
+    --font_SansSerif: SansSerif;
+    --display_flex: flex;
+    --full_width: 100%;
 }
+
 header {
-    font-family:var(--font_Popins);
+    font-family: var(--font_Popins);
     display: var(--display_flex);
     justify-content: center;
     align-items: center;
-    width:var(--full_width);
+    width: var(--full_width);
 }
 
 .sponsor {
-    display:var(--display_flex);
+    display: var(--display_flex);
     justify-content: center;
     margin-left: -100px;
     width: var(--full_width);
@@ -21,14 +22,23 @@ header {
 
 .social_media {
 
-    margin-top: -100px;
-    align-self: flex-end;
-    width: 300px;
+    margin-left: 1200px;
+    margin-top: -180px;
+
+    width: 310px;
     padding-bottom: 70px;
     padding-right: 90px;
     display: block;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
+
+
+}
+
+.social {
+    display: var(--display_flex);
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+
 
 }
 
@@ -38,18 +48,17 @@ header {
 }
 
 .contacts {
+    margin-top: -20px;
     display: var(--display_flex);
     align-self: flex-end;
-    margin-top: -80px;
-    padding-right: 160px;
-    padding-bottom: 60px;
 
 
 }
 
 .contacts h5 {
-    margin-right: 20px;
     color: #D4CDEF;
+    padding-right: 10px;
+
     font-size: 15px;
 }
 
@@ -76,7 +85,7 @@ footer {
 
     margin-left: -700px;
     padding: 100px;
-    display:var(--display_flex);
+    display: var(--display_flex);
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -132,7 +141,7 @@ footer {
 }
 
 .about {
-    font-family:var(--font_SansSerif);
+    font-family: var(--font_SansSerif);
     margin: 0px auto; /* центрируем по горизонтали */
     font-size: 18px;
     color: #23155B;
@@ -329,7 +338,7 @@ a {
 
 .investors {
     padding-top: 70px;
-    display:var(--display_flex);
+    display: var(--display_flex);
     justify-content: center;
 }
 
@@ -402,13 +411,18 @@ a {
     border: none;
     padding: 8px 20px;
     font-family: var(--font_Popins);
-    font-size: 16px;
+    font-size: 14px;
     color: #23155B;
     font-weight: 500;
     line-height: 28px;
     letter-spacing: 0em;
     text-align: left;
     background: none;
+}
+
+.main_content .btn_right:hover {
+    background-color: #04AA6D;
+    cursor: pointer;
 }
 
 .btn_left {
@@ -435,3 +449,15 @@ a {
     background: white;
     color: #8053FF;
 }
+
+
+@media (max-width: 1375px) {
+    .list_items {
+        margin-top: -300px;
+
+    }
+
+
+}
+
+
