@@ -5,6 +5,18 @@
     <title>HTML</title>
     <link rel="stylesheet" href="css/style1.css">
 </head>
+
+<script>
+    window.onload = function () {
+        var button = document.getElementsByClassName("btn_right option")[0];
+        var output = document.getElementById('output');
+        button.addEventListener('click', function () {
+            document.body.style.display = 'none';
+        });
+
+    };
+
+</script>
 <body>
 <header>
     <div class="container">
@@ -263,7 +275,7 @@
     </section>
     <section class="sponsor">
         <div class="position">
-           <b> <span class="tittle">Brought to you by DeFiPie in partnership with</span></b>
+            <b> <span class="tittle">Brought to you by DeFiPie in partnership with</span></b>
             <ul>
                 <li><a href="#"><img img src="img/logoo.png" alt="Harvard"></a></li>
                 <li><a href="#"><img img src="img/logo.png" alt="Microsoft"></a></li>
@@ -308,16 +320,18 @@
             <button type="submit" class="btn_left option">Send</button>
         </div>
     </div>
-    <div class="social_media">
-        <img src="img/Social.png" alt="Harvard">
-        <img src="img/Social-1.png" alt="Harvard">
-        <img src="img/Social-2.png" alt="Harvard">
-        <img src="img/Socia.png" alt="Harvard">
-    </div>
-    <div class="contacts">
-        <h5>hello@visioncapital.com</h5>
-        <h5>Join us on Telegram</h5>
+    <div class="social">
+        <div class="social_media">
+            <img src="img/Social.png" alt="Harvard">
+            <img src="img/Social-1.png" alt="Harvard">
+            <img src="img/Social-2.png" alt="Harvard">
+            <img src="img/Socia.png" alt="Harvard">
 
+            <div class="contacts">
+                <h5>hello@visioncapital.com</h5>
+                <h5>Join us on Telegram</h5>
+            </div>
+        </div>
     </div>
 </footer>
 </body>
