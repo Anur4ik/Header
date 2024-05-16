@@ -1,4 +1,4 @@
-<html xmlns="http://www.w3.org/1999/html">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,13 +8,20 @@
 
 <script>
     window.onload = function () {
-        var button = document.getElementsByClassName("btn_right option")[0];
-        var output = document.getElementById('output');
-        button.addEventListener('click', function () {
-            document.body.style.display = 'none';
-        });
-
-    };
+        var i=0;
+        var button = document.getElementsByClassName("btn btn-primary")[0];
+        if(i==0) {
+            button.addEventListener('click', function () {
+                if (i == 0) {
+                    document.querySelector('nav.function').classList.remove('hide')
+                    document.querySelector('nav.function').classList.add('show')
+                    i++;
+                } else {
+                    document.querySelector('nav.function').classList.remove('show')
+                    document.querySelector('nav.function').classList.add('hide')
+                    i--;
+                }
+            })}}
 
 </script>
 <body>
@@ -32,7 +39,14 @@
         </nav>
     </div>
 </header>
+<nav class="function hide">
+    <ul>
+        <li><a href="#">For Projects</a></li>
+        <li><a href="#">For Investors</a></li>
+        <li><a href="#">For Students</a></li>
+    </ul>
 
+</nav>
 <main>
     <section class="main_content">
         <div class="position">
