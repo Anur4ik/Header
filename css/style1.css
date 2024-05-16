@@ -1,21 +1,44 @@
+
+
+body {
+    margin: 0;
+    width: 100%;
+    max-width:100%;
+    overflow-x: hidden;
+    display:block;
+
+}
+html{
+    width: 100%;
+}
+body, html {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+
 :root {
     --font_Popins: 'popins', sans-serif;
     --font_SansSerif: SansSerif;
     --display_flex: flex;
+    --content-center:center;
     --full_width: 100%;
 }
 
 header {
+    width: 100%;
     font-family: var(--font_Popins);
     display: var(--display_flex);
-    justify-content: center;
-    align-items: center;
+    justify-content: var(--content-center);
+    align-items: var(--content-center);
     width: var(--full_width);
 }
 
 .sponsor {
     display: var(--display_flex);
-    justify-content: center;
+    justify-content:var(--content-center);
     margin-left: -100px;
     width: var(--full_width);
 }
@@ -35,8 +58,8 @@ header {
 
 .social {
     display: var(--display_flex);
-    justify-content: center;
-    align-items: center;
+    justify-content: var(--content-center);
+    align-items: var(--content-center);
     margin-top: 100px;
 
 
@@ -87,8 +110,8 @@ footer {
     padding: 100px;
     display: var(--display_flex);
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: var(--content-center);
+    justify-content:var(--content-center);
 }
 
 .joinToVC h1 {
@@ -215,7 +238,7 @@ footer {
     width: var(--full_width);
     color: #23155B;
 }
-
+.function ul,
 .menu_list ul,
 .sponsor ul,
 .funding ul {
@@ -309,6 +332,27 @@ a {
     width: 500px;
     color: #23155B;
 }
+.function {
+    background:rgba(217, 255, 204,70%);
+    display: var(--display_flex);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: var(--full_width);
+    font-family: SansSerif;
+
+
+}
+.hide {
+    margin-left: 4000px;
+
+}
+.show{
+    margin-left: 0;
+}
+.function li{
+    padding-right: 150px;
+}
 
 .answers {
     color: #23155B;
@@ -377,11 +421,12 @@ a {
 
 .main_content {
     margin-left: -200px;
-    padding-top: 100px;
     display: var(--display_flex);
     align-items: center;
     justify-content: center;
     text-align: center;
+    flex-direction: column;
+
 }
 
 .name_company {
@@ -420,10 +465,6 @@ a {
     background: none;
 }
 
-.main_content .btn_right:hover {
-    background-color: #04AA6D;
-    cursor: pointer;
-}
 
 .btn_left {
     position: absolute;
@@ -448,16 +489,6 @@ a {
     border-radius: 8px;
     background: white;
     color: #8053FF;
-}
-
-
-@media (max-width: 1375px) {
-    .list_items {
-        margin-top: -300px;
-
-    }
-
-
 }
 
 
