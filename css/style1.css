@@ -344,7 +344,7 @@ a {
 
 }
 .hide {
-    visibility: hidden 
+    visibility: hidden ;
     margin-left: 4000px;
 
 }
