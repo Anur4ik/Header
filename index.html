@@ -7,15 +7,26 @@
 </head>
 
 <script>
-    window.onload = function () {
-        var button = document.getElementsByClassName("btn_right option")[0];
-        var output = document.getElementById('output');
-        button.addEventListener('click', function () {
-            document.body.style.display = 'none';
-        });
+    document.addEventListener("DOMContentLoaded", (event) => {
+        let counter = 0;
+        const button = document.querySelector('button.btn.btn-primary');
+        if(button){
+            button.addEventListener('click', function () {
+                if (counter == 0) {
+                    ;
+                    document.querySelector('nav.function').classList.remove('hide');
+                    document.querySelector('nav.function').classList.add('show');
+                    document.body.classList.add('body-no-scroll');
+                    counter++;
+                } else {
 
-    };
-
+                    document.querySelector('nav.function').classList.remove('show');
+                    document.querySelector('nav.function').classList.add('hide');
+                    document.body.classList.remove('body-no-scroll');
+                    counter--;
+                }
+            });
+        }});
 </script>
 <body>
 <header>
@@ -32,26 +43,33 @@
         </nav>
     </div>
 </header>
+<nav class="function hide">
+    <ul>
+        <li><a href="#">For Projects</a></li>
+        <li><a href="#">For Investors</a></li>
+        <li><a href="#">For Students</a></li>
+    </ul>
 
+</nav>
 <main>
     <section class="main_content">
         <div class="position">
-            <img src="img/bg.png" width="1200px" alt="My Happy SVG"/>
+            <img alt="My Happy SVG" src="img/bg.png"/>
             <h1 class="name_company">Vision Capital</h1>
             <h2 class="descriptions">The right way to fund and incubate your DeFi startup</h2>
-            <button type="submit" class="btn_left option">I Need Funding</b></button>
-            <button type="submit" class="btn_right option">Become an Investor </b></button>
+            <button type="submit" class="btn_left  option">I Need Funding</button>
+            <button type="submit" class="btn_right  option">Become an Investor </b></button>
         </div>
     </section>
     <section class="sponsor">
         <div class="position">
             <span class="tittle">In the pipeline</span>
             <ul>
-                <li><a href="#"><img img src="img/image26.png" alt="Harvard"></a></li>
-                <li><a href="#"><img img src="img/image27.png" alt="Microsoft"></a></li>
-                <li><a href="#"><img img src="img/image28.png" alt="Nasa"></a></li>
-                <li><a href="#"><img img src="img/image29.png" alt="Yale"></a></li>
-                <li><a href="#"><img img src="img/image30.png" alt="PeYoneer"></a></li>
+                <li><a href="#"><img  src="img/image26.png" alt="Harvard"></a></li>
+                <li><a href="#"><img src="img/image27.png" alt="Microsoft"></a></li>
+                <li><a href="#"><img  src="img/image28.png" alt="Nasa"></a></li>
+                <li><a href="#"><img  src="img/image29.png" alt="Yale"></a></li>
+                <li><a href="#"><img  src="img/image30.png" alt="PeYoneer"></a></li>
             </ul>
         </div>
     </section>
@@ -62,7 +80,7 @@
                 in DeFi
             </h2>
             <div class="list_items">
-                <ul class="">
+                <ul >
                     <li>
                         <div class="position_list">
                             <h2 class="list-number text-colored">1</h2>
@@ -96,8 +114,6 @@
                 </ul>
             </div>
         </div>
-    </section>
-    </div>
     </section>
 
     <section class="projects">
@@ -187,11 +203,19 @@
                         </div>
                     </div>
                 </li>
+                <li>
+
+            </li>
+                <li>
+
+                    <div class="position left">
+                        <button type="submit" class="btn_left option ">I Need Funding</button>
+                        <button type="submit" class="btn_right option ">Learn More </button>
+                    </div>
+
+                </li>
             </ul>
-            <div class="position left">
-                <button type="submit" class="btn_left option ">I Need Funding</b></button>
-                <button type="submit" class="btn_right option ">Learn More </b></button>
-            </div>
+
         </div>
     </section>
     <section class="investors">
